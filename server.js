@@ -8,7 +8,7 @@ const app=express()
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.status("sucess")
+    res.send("sucess")
 })
 
 app.post('/signup',(req,res)=>{
