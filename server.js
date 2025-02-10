@@ -7,6 +7,10 @@ const app=express()
 
 app.use(express.json())
 
+app.get('/',(req,res)=>{
+    res.status("sucess")
+})
+
 app.post('/signup',(req,res)=>{
     const {Username}=req.body
     const {Email}=req.body
